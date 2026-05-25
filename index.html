@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmet Unveren — Developer</title>
+  <meta name="description" content="Developer building tools for ecommerce. Creator of Revelo, ToggleTax, Ultimate Fashion Studio, and Generate Product Photos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #e8e8e8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 580px;
+      width: 100%;
+    }
+
+    /* Header */
+    .header {
+      margin-bottom: 52px;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 20px;
+      letter-spacing: -0.3px;
+    }
+
+    .header h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.4px;
+      margin-bottom: 6px;
+    }
+
+    .header p {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .header a {
+      color: #888;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .header a:hover { color: #fff; }
+
+    /* Section label */
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #333;
+      margin-bottom: 14px;
+    }
+
+    /* App cards */
+    .apps {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      margin-bottom: 52px;
+      border: 1px solid #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .app-card {
+      background: #0a0a0a;
+      padding: 20px 22px;
+      transition: background 0.15s;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .app-card:last-child { border-bottom: none; }
+
+    .app-card:hover { background: #111; }
+
+    .app-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .app-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: #fff;
+      letter-spacing: -0.2px;
+    }
+
+    .tags {
+      display: flex;
+      gap: 6px;
+    }
+
+    .tag {
+      font-size: 10px;
+      font-weight: 500;
+      color: #444;
+      border: 1px solid #222;
+      border-radius: 4px;
+      padding: 2px 7px;
+      letter-spacing: 0.02em;
+    }
+
+    .app-desc {
+      font-size: 12px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .app-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      font-weight: 500;
+      color: #555;
+      background: #000;
+      border: 1px solid #222;
+      border-radius: 5px;
+      padding: 5px 10px;
+      text-decoration: none;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .link-btn:hover {
+      color: #fff;
+      border-color: #555;
+    }
+
+    .link-btn svg {
+      width: 11px;
+      height: 11px;
+    }
+
+    /* Footer */
+    .footer {
+      font-size: 12px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer a:hover { color: #888; }
+
+    .dot {
+      width: 2px;
+      height: 2px;
+      background: #222;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <h1>Ahmet Unveren</h1>
+      <p>Building tools for ecommerce. &nbsp;<a href="mailto:aa.unveren@gmail.com">aa.unveren@gmail.com</a></p>
+    </div>
+
+    <div class="section-label">Projects</div>
+
+    <div class="apps">
+
+      <!-- Revelo -->
+      <div class="app-card">
+        <div class="app-header">
+          <span class="app-name">Revelo — Before & After Slider</span>
+          <div class="tags"><span class="tag">Shopify</span></div>
+        </div>
+        <p class="app-desc">Interactive comparison sliders in the buy box. No code, 2-minute setup.</p>
+        <div class="app-links">
+          <a class="link-btn" href="https://apps.shopify.com/revelo-before-after-slider" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            App Store
+          </a>
+        </div>
+      </div>
+
+      <!-- ToggleTax -->
+      <div class="app-card">
+        <div class="app-header">
+          <span class="app-name">ToggleTax — VAT Switcher</span>
+          <div class="tags"><span class="tag">Shopify</span></div>
+        </div>
+        <p class="app-desc">Switch between VAT-inclusive and exclusive prices instantly. Built for EU, UK, and Turkey.</p>
+        <div class="app-links">
+          <a class="link-btn" href="https://apps.shopify.com/toggletax" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            App Store
+          </a>
+        </div>
+      </div>
+
+      <!-- UFS -->
+      <div class="app-card">
+        <div class="app-header">
+          <span class="app-name">Ultimate Fashion Studio</span>
+          <div class="tags"><span class="tag">Shopify</span><span class="tag">Web</span></div>
+        </div>
+        <p class="app-desc">AI fashion visuals with 4 custom inputs: model, scene, garments, pose. Batch process your full catalog.</p>
+        <div class="app-links">
+          <a class="link-btn" href="https://apps.shopify.com/ultimate-fashion-studio" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            App Store
+          </a>
+          <a class="link-btn" href="https://getufs.com" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            getufs.com
+          </a>
+        </div>
+      </div>
+
+      <!-- GPP -->
+      <div class="app-card">
+        <div class="app-header">
+          <span class="app-name">Generate Product Photos</span>
+          <div class="tags"><span class="tag">Web</span><span class="tag">iOS</span></div>
+        </div>
+        <p class="app-desc">AI-generated product photography. Upload your product, get studio-quality photos instantly.</p>
+        <div class="app-links">
+          <a class="link-btn" href="https://generateproductphotos.com" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            Web
+          </a>
+          <a class="link-btn" href="https://apps.apple.com/us/app/generate-product-photos-ai/id6760044661" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/><path d="M15 8.5c-.5-1.5-2-2.5-3.5-2.5C9 6 7 8 7 10.5c0 3 2.5 7.5 5 7.5s5-4.5 5-7.5c0-.8-.2-1.5-.5-2z"/></svg>
+            iOS
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <a href="mailto:aa.unveren@gmail.com">Email</a>
+      <div class="dot"></div>
+      <a href="https://github.com/AhmetUnveren" target="_blank">GitHub</a>
+      <div class="dot"></div>
+      <a href="https://linkedin.com/in/ahmetunveren" target="_blank">LinkedIn</a>
+    </div>
+
+  </div>
+</body>
+</html>
